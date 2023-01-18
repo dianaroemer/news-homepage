@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+.App {
+  text-align: center;
+  height: 100%;
+  font-size: 15px;
+  font-family: 'Inter';
+}
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+}
+
+#page-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+}
+
+#content-wrap {
+  padding-bottom: 11px;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  font-size: 11px;
+  height: 1rem;
+  text-align: center;
+  // color: _colors.$MediumGrey 
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  transition: .11s;
+}
+
+.attribution a:hover {
+  // color: _colors.$Orange;
+}
