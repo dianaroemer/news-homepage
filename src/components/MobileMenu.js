@@ -11,9 +11,27 @@ function MobileMenu(props) {
 
             <div className='mobileMenuSidePane'>
 
-                <MenuClose/>
+                <MenuClose id='mobileMenuCloseIcon' viewBox='0 0 32 32'/>
 
-                I am the Mobile Menu Component!sdhkfj
+                <div className='mobileMenuLink'>
+                    Home
+                </div>
+
+                <div className='mobileMenuLink'>
+                    New
+                </div>
+
+                <div className='mobileMenuLink'>
+                    Popular
+                </div>
+
+                <div className='mobileMenuLink'>
+                    Trending
+                </div>
+                
+                <div className='mobileMenuLink'>
+                    Categories
+                </div>
 
             </div>
 

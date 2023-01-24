@@ -19,4 +19,22 @@
     transform: translateX(67%);
     // top: 0;
     z-index: 6;
+
+    display: flex;
+    flex-direction: column;
+    text-align: start;
 }
+
+#mobileMenuCloseIcon {
+    filter: drop-shadow(0 0px 2px lightGrey);
+    // background-size: 28px 28px;
+    // viewBox: 0 0 100 100;
+    height: 28px;
+    width: 28px;
+}
+
+// CloseIcon has height of 28px, width of 28px if symmetrical
+
+// top 0, 28 - 28px
+// left 118, 145 - 28px
+// right 352, 375 - 23px

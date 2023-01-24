@@ -26,7 +26,8 @@
 }
 
 #content-wrap {
-  padding-bottom: 11px;
+  // padding-bottom: 11px;
+  // XXX UPDATE XXX Again, this line is causing trouble by creating extra length on the page, creating a vertical scroll bar unnecessarily
 }
 
 .attribution {
