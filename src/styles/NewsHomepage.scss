@@ -1,0 +1,19 @@
+.newsHomepage {
+    // position: absolute;
+    z-index: 1;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+}
+
+.newsHomepageWrapper {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+
+.newsHomepageContent {
+    position: relative;
+    z-index: 3;
+}

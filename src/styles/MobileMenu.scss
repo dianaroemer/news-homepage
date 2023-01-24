@@ -1,0 +1,22 @@
+.mobileMenuFull {
+    position: absolute;
+    background-color: rgba(0,0,0, .3);
+    height: 100vh;
+    width: 100%;
+    // opacity: 20%;
+    bottom: 0;
+
+    z-index: 5;
+
+}
+
+.mobileMenuSidePane {
+    position:absolute;
+    opacity: 100%;
+    background-color: white;
+    width: 60%;
+    height: 100%;
+    transform: translateX(67%);
+    // top: 0;
+    z-index: 6;
+}
