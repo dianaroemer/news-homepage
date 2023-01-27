@@ -6,12 +6,18 @@ import {ReactComponent as MenuClose} from '../assets/images/icon-menu-close.svg'
 
 function MobileMenu(props) {
 
+
+
+    
+
     return(
-        <div className='mobileMenuFull'>
+        <div className='mobileMenuFull' onClick={(e) => {props.toggleMobileMenu(e)}}>
 
             <div className='mobileMenuSidePane'>
 
-                <MenuClose id='mobileMenuCloseIcon' viewBox='0 0 32 32'/>
+                <MenuClose id='mobileMenuCloseIcon' viewBox='0 0 32 32'
+                    onClick={(e) => {
+                        props.toggleMobileMenu(e)}}/>
 
                 <div className='mobileMenuLink'>
                     Home

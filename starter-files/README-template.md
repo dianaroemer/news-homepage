@@ -64,7 +64,13 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 I struggled somewhat with properly implementing appropriate z-index values for multiple components. In the future, I would like to practice using z-index to see which components will draw first, then see which components can be affected by changing their z-index values, based on the order in which they are drawn by the webpage. Similarly, I learned about how z-index is overridden by adjusting a component's opactiy or by applying a transform. While I don't have a complete understanding of why that's the case, it seems to have to do with how elements with adjusted transform and opacity values are drawn differently from other, unadjusted elements. 
 
 In addition, I learned about drawing and resizing SVG elements, or more specifically using viewBox on an SVG element to designate the area of the SVG that get's drawn, then adjusting the element's height and width in the styling 'after' the viewbox declares the size of the element to draw. Long story short, when drawing SVG's, declare their viewBox appropriately before adjusting any other styling of the SVG to ensure the browser draws the SVG appropriately, instead of clipping corners. 
-
+    In the future, when using viewBox to scale and place SVG's, add a 
+    ```css
+    #menuIconSVG {
+      border: 1px solid black;
+    }
+    ```
+    to see its placement and the sizing/scaling of the SVG within the viewBox, instead of just guessing white on white or black on black. The border shows the size of your box, and you can manually adjust height, width, min-x, and min-y to place the SVG correctly, finalizing with tweaks to padding and margin once the size is set.
 
 
 

@@ -16,4 +16,26 @@
 .newsHomepageContent {
     position: relative;
     z-index: 3;
+    width: auto;
+    // padding-left: 15px;
+    
+}
+
+.newsHomepageNav {
+    width: auto;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 27px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#logoIcon {
+    padding-left: 0;
+}
+
+#menuIcon {
+    transform: translateX(5px);
+    padding-top: 6px;
 }
