@@ -72,6 +72,39 @@ In addition, I learned about drawing and resizing SVG elements, or more specific
     ```
     to see its placement and the sizing/scaling of the SVG within the viewBox, instead of just guessing white on white or black on black. The border shows the size of your box, and you can manually adjust height, width, min-x, and min-y to place the SVG correctly, finalizing with tweaks to padding and margin once the size is set.
 
+Ok, I'm really proud of this one. I was able to get CSS transitions to work on a rendered React component without completely redrawing the component, allowing for variable state to affect the components current transition lifetime. By drawing the component as normal, then applying variable styling using the state or props of the parent component, you can tie functionality to the true or false values of the state or props. Then, by passing that variable into the style of the rendered component and defining some transition definitions in the CSS, the transitions apply "mostly" seamlessly. Check this out - 
+
+```js
+let [view, setView] = useState(true)
+return (
+  <div className="modal" style={{left: view && "500px"}}>
+    modal content
+  </div>
+)
+```
+and
+```css
+.modal {
+  left: 0px;
+  transition: 1s left;
+}
+```
+
+As seen above, the state of the `view` variable determines whether or not the .modal component renders its style with 500px or with the CSS declared 0px. Applying a transition over changes to the left property keeps the modal rendered in the DOM and allows it to be moved freely on and off of the webpage with animations going both ways. This also applies, and works well, with the visibility property - e.g.
+```js
+<div className="modal" style={{left: view && "500px", visbility: none}}>
+```
+```css
+.modal {
+  left: 0px;
+  visibility: visible;
+  transition: 0s visibility, .5s left;
+}
+```
+
+One of the problems I discovered in using this, is that when the component animates in or out, it has a tendency to stay where it was last put. While it may sound counterintuitive, I found success using setTimeout and two state management variables to move my components behind the scenes - take a look at the function handleOpenMenu in NewsHomepage.js and how it passes those state values down to MobileMenu.js at '.mobileMenuFull' and '.mobileMenuSidePane'. That problem might be resolved in the future by reversing the order in which I animate these components - instead of applying the true state to the hidden state, apply the true state to the visible state, and allow the the false state to correspond to the hidden state. For better examples, see the reference code I found here
+https://blog.openreplay.com/mastering-css-transitions-with-react-18/
+
 
 
 Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
