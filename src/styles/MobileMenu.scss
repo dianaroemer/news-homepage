@@ -7,10 +7,11 @@
     bottom: 0;
 
     z-index: 5;
-    // left: 500px;
+    left: 0px;
+    visibility: visible;
 
     // transform: translateX(100%);
-    transition: .5s opacity;
+    transition: 0s left, 0s visbility, .5s opacity ease-in;
 
 }
 
@@ -21,7 +22,7 @@
     // background-color: red;
 
     left: 0px;
-    transition: .5s left;
+    transition: .5s left cubic-bezier(0.175, 0.885, 0.32, 1.126);
 
 
     width: 56%;

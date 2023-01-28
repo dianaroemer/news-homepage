@@ -9,24 +9,39 @@ import {ReactComponent as MenuIcon} from '../assets/images/icon-menu.svg'
 
 function NewsHomepage(props) {
 
-    const [mobileMenu, toggleMobileMenu] = useState(false);
+    const [mobileMenu, toggleMobileMenu] = useState(true);
+    const [mobileMenuTimeout, setMobileMenuTimeout] = useState(true);
 
 
     function handleOpenMenu(e) {
         e.preventDefault();
-        // console.log(`You clicked the open menu button`);
-        console.log(e.target.className);
+        console.log(`You clicked the open menu button`);
+        // console.log(e.target.className);
+        console.log()
         if(e.target.className
             === 'mobileMenuSidePane'){
                 // toggleMobileMenu(false);
-                console.log('you clicked the side pade')
-            }
-            else if (e.target.className === 'mobileMenuFull') {
-                toggleMobileMenu(false)
-            }
-            else {
-                mobileMenu ? toggleMobileMenu(false) : toggleMobileMenu(true);
-            }
+                console.log('you clicked the side panel')
+        }
+        else if (e.target.className === 'mobileMenuFull' && mobileMenu) {
+            console.log('here?')
+            toggleMobileMenu(false)
+        }
+        else if (mobileMenuTimeout) {
+            console.log('OPEN')
+            mobileMenu ? toggleMobileMenu(false) : toggleMobileMenu(true);
+            setMobileMenuTimeout(false);
+        }
+        else {
+            console.log('CLOSE')
+            mobileMenu ? toggleMobileMenu(false) : toggleMobileMenu(true);
+            setTimeout( () => {
+                setMobileMenuTimeout(true);
+                console.log('timeout logged');
+            }, 500);
+            
+
+        }
         
     }
     
@@ -64,6 +79,7 @@ function NewsHomepage(props) {
                 <MobileMenu 
                     toggleMobileMenu={handleOpenMenu}
                     mobileMenu={mobileMenu}
+                    mobileMenuTimeout={mobileMenuTimeout}
                 />
 
 
