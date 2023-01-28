@@ -11,9 +11,9 @@ function MobileMenu(props) {
     
 
     return(
-        <div className='mobileMenuFull' onClick={(e) => {props.toggleMobileMenu(e)}}>
+        <div className='mobileMenuFull' onClick={(e) => {props.toggleMobileMenu(e)}} style={{opacity: props.mobileMenu && "0%"}}>
 
-            <div className='mobileMenuSidePane'>
+            <div className='mobileMenuSidePane' style={{left: props.mobileMenu && '500px'}}>
 
                 <MenuClose id='mobileMenuCloseIcon' viewBox='0 0 32 32'
                     onClick={(e) => {

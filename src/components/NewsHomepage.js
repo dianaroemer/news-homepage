@@ -56,9 +56,15 @@ function NewsHomepage(props) {
                     I am News Homepage Component! asdkjh
                 </div>
 
-                {mobileMenu && <MobileMenu 
+                {/* {mobileMenu && <MobileMenu 
                                     toggleMobileMenu={handleOpenMenu}
-                                    />}
+                                    mobileMenu={mobileMenu}
+                                    />} */}
+
+                <MobileMenu 
+                    toggleMobileMenu={handleOpenMenu}
+                    mobileMenu={mobileMenu}
+                />
 
 
                 {/* <MobileMenu/> */}
