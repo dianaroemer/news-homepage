@@ -70,14 +70,29 @@ function NewsHomepage(props) {
 
                     <div className='newsHomepageHeadline'>
 
-                        <img src={mobileHeadlineImage} alt='blah' className='mobileHeadlineImage'/>
+                        <img src={mobileHeadlineImage} alt='Colorful blocks in an elaborate, aesthetically pleasing pattern' className='mobileHeadlineImage'/>
+
+                        <div className='newsHomepageHeadlineContent'>
+                            <div className='newsHomepageHeadlineHeader'>
+                                The Bright Future of Web 3.0?
+                            </div>
+
+                            <div className='newsHomepageHeadlineDetails'>
+                                <div className='newsHomepageHeadlineBrief'>
+                                    We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?
+                                </div>
+                                <button className='newsHomepageHeadlineDetailsMore'>
+                                    Read More
+                                </button>
+                            </div>
+                        </div>
 
                         I am the headline. I am composed of an image, header text, a short description (lead), and a Read More button.
                     </div>
 
                     
 
-                    I am News Homepage Component! asdkjh
+                    I am News Homepage Component! asdkjh aslkdhlaksjhdlkjahsdkjhaskljdhlasjdhlkajshdlkjahsdlkjhaslkdhslkjdhlkasjhdljas
                 </div>
 
                 {/* {mobileMenu && <MobileMenu 

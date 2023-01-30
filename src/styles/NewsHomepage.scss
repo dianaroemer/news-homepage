@@ -1,8 +1,10 @@
+@use '_colors' as _colors;
+
 .newsHomepage {
     // position: absolute;
     z-index: 1;
     overflow: hidden;
-    height: 100vh;
+    // height: 100vh;
     width: 100%;
 }
 
@@ -46,8 +48,44 @@
     padding-left: 16px;
     padding-right: 16px;
     padding-top: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .mobileHeadlineImage {
     width: 100%;
+}
+
+.newsHomepageHeadlineContent {
+    text-align: left;
+}
+
+.newsHomepageHeadlineHeader {
+    font-weight: 800;
+    font-size: 2.52rem;
+    line-height: 98%;
+    padding-top: 25px;
+}
+
+.newsHomepageHeadlineDetails {
+    padding-top: 18px;
+}
+
+.newsHomepageHeadlineBrief {
+    color: _colors.$DarkGrayishBlue;
+    line-height: 1.7;
+}
+
+.newsHomepageHeadlineDetailsMore {
+    height: 3rem;
+    width: 54%;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    border: none;
+    background-color: _colors.$SoftRed;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: .87rem;
+    letter-spacing: .27rem;
 }
