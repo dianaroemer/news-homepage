@@ -4,6 +4,8 @@ import MobileMenu from './MobileMenu';
 
 import {ReactComponent as Logo} from '../assets/images/logo.svg'
 import {ReactComponent as MenuIcon} from '../assets/images/icon-menu.svg'
+import mobileHeadlineImage from '../assets/images/image-web-3-mobile.jpg'
+
 
 
 
@@ -54,7 +56,7 @@ function NewsHomepage(props) {
 
                     <div className='newsHomepageNav'>
 
-                        <Logo viewBox='16 0 57 57' id='logoIcon'/>
+                        <Logo viewBox='16 0 57 57' id='logoIcon' className='masthead'/>
 
                         <MenuIcon viewBox='10 -1 20 20' 
                             height={'20px'}
@@ -64,6 +66,13 @@ function NewsHomepage(props) {
                                 handleOpenMenu(e);
                              }}/>
 
+                    </div>
+
+                    <div className='newsHomepageHeadline'>
+
+                        <img src={mobileHeadlineImage} alt='blah' className='mobileHeadlineImage'/>
+
+                        I am the headline. I am composed of an image, header text, a short description (lead), and a Read More button.
                     </div>
 
                     
