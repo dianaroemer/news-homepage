@@ -150,18 +150,41 @@ function NewsHomepage(props) {
                                 </p>
                              </div>
                         </article>
+
+                        <article className='newsHomepageStoryContainer'>
+                            <img src={newsThumbnailLaptops} alt='XXXUPDATEXXX' className='newsHomepageStoryThumbnail'/>
+
+
+                             <div className='newsHomepageStoryContent'>
+                                <h2 className='newsHomepageStoryNumber'>
+                                    02
+                                </h2>
+                                <h3 className='newsHomepageStoryTitle'>
+                                    Top 10 Laptops of 2022
+                                </h3>
+                                <p className='newsHomepageStoryDescription'>
+                                    Our best picks for various needs and budgets.
+                                </p>
+                             </div>
+                        </article>
+
+                        <article className='newsHomepageStoryContainer' id='newsHomepageFinalStoryContainer'>
+                            <img src={newsThumbnailGamingGrowth} alt='XXXUPDATEXXX' className='newsHomepageStoryThumbnail'/>
+
+
+                             <div className='newsHomepageStoryContent'>
+                                <h2 className='newsHomepageStoryNumber'>
+                                    03
+                                </h2>
+                                <h3 className='newsHomepageStoryTitle'>
+                                    The Growth of Gaming
+                                </h3>
+                                <p className='newsHomepageStoryDescription'>
+                                    How the pandemic has sparked fresh opportunities.
+                                </p>
+                             </div>
+                        </article>
                     </div>
-
-                    
-
-                    I am News Homepage Component! asdkjh aslkdhlaksjhdlkjahsdkjhaskljdhlasjdhlkajshdlkjahsdlkjhaslkdhslkjdhlkasjhdljas
-
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-
 
                 </div>
 

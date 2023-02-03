@@ -96,7 +96,7 @@
     margin-left: 16px;
     margin-right: 16px;
     margin-top: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 45px;
     text-align: left;
     padding: 21px;
     
@@ -147,7 +147,8 @@
 
 .newsHomepageStoryContainer {
     display: flex;
-    padding-top: 49px;
+    padding-top: 19px;
+    padding-bottom: 13px;
 }
 
 .newsHomepageStoryThumbnail {
@@ -162,7 +163,7 @@
 
 .newsHomepageStoryNumber {
     font-size: 2rem;
-    padding-top: 11px;
+    padding-top: 10px;
     margin: 0px;
     font-weight: 800;
     line-height: 1rem;
@@ -182,4 +183,10 @@
     line-height: 1.58rem;
     margin: 0;
     padding-top: 10px;
+}
+
+
+
+#newsHomepageFinalStoryContainer {
+    margin-bottom: 60px;
 }
