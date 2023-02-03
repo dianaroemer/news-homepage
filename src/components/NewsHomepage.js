@@ -86,14 +86,63 @@ function NewsHomepage(props) {
                                 </button>
                             </div>
                         </div>
+                    </div>
 
-                        I am the headline. I am composed of an image, header text, a short description (lead), and a Read More button.
+                    <div className='newsHomepageNewStoriesContainer'>
+
+                        <div className='newsHomepageNewStoriesHeader'>
+                            New
+                        </div>
+
+                        <div className='newsHomepageNewStory'>
+                            <div className='newsHomepageNewStoryHeader'>
+                                Hydrogen VS Electric Cars
+                            </div>
+                            <div className='newsHomepageNewStoryContent'>
+                                Will hydrogen-fueled cars ever catch up to EVs?
+                            </div>
+
+                        </div>
+
+                        <hr className='newsHomepageNewStorySeparator'/>
+
+                        <div className='newsHomepageNewStory'>
+                            <div className='newsHomepageNewStoryHeader'>
+                                The Downsides of AI Artistry
+                            </div>
+                            <div className='newsHomepageNewStoryContent'>
+                                What are the possible adverse effects of on-demand AI image generation?
+                            </div>
+
+                        </div>
+
+                        <hr className='newsHomepageNewStorySeparator'/>
+
+                        <div className='newsHomepageNewStory'>
+                            <div className='newsHomepageNewStoryHeader'>
+                                Is VC Funding Drying Up?
+                            </div>
+                            <div className='newsHomepageNewStoryContent'>
+                                Private funding by VC firms is down 50% YOY. We take a look at what that means.
+                            </div>
+
+                        </div>
+
                     </div>
 
                     
 
                     I am News Homepage Component! asdkjh aslkdhlaksjhdlkjahsdkjhaskljdhlasjdhlkajshdlkjahsdlkjhaslkdhslkjdhlkasjhdljas
+
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+
                 </div>
+
 
                 {/* {mobileMenu && <MobileMenu 
                                     toggleMobileMenu={handleOpenMenu}
