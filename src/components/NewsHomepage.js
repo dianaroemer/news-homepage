@@ -122,7 +122,7 @@ function NewsHomepage(props) {
                             <div className='newsHomepageNewStoryHeader'>
                                 Is VC Funding Drying Up?
                             </div>
-                            <div className='newsHomepageNewStoryContent'>
+                            <div className='newsHomepageNewStoryContent' id='newsHomepageNewFinalStory'>
                                 Private funding by VC firms is down 50% YOY. We take a look at what that means.
                             </div>
 
