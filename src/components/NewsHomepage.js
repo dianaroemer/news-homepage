@@ -6,6 +6,9 @@ import {ReactComponent as Logo} from '../assets/images/logo.svg'
 import {ReactComponent as MenuIcon} from '../assets/images/icon-menu.svg'
 import mobileHeadlineImage from '../assets/images/image-web-3-mobile.jpg'
 
+import newsThumbnailRetroPCs from '../assets/images/image-retro-pcs.jpg';
+import newsThumbnailLaptops from '../assets/images/image-top-laptops.jpg';
+import newsThumbnailGamingGrowth from '../assets/images/image-gaming-growth.jpg';
 
 
 
@@ -128,6 +131,25 @@ function NewsHomepage(props) {
 
                         </div>
 
+                    </div>
+
+                    <div className='newsHomepageStoriesContainer'>
+                        <article className='newsHomepageStoryContainer'>
+                            <img src={newsThumbnailRetroPCs} alt='An old computer terminal lit in radical red and blue light' className='newsHomepageStoryThumbnail'/>
+
+
+                             <div className='newsHomepageStoryContent'>
+                                <h2 className='newsHomepageStoryNumber'>
+                                    01
+                                </h2>
+                                <h3 className='newsHomepageStoryTitle'>
+                                    Reviving Retro PCs
+                                </h3>
+                                <p className='newsHomepageStoryDescription'>
+                                    What happens when old PCs are given modern upgrades?
+                                </p>
+                             </div>
+                        </article>
                     </div>
 
                     
