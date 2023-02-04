@@ -1,7 +1,7 @@
 .mobileMenuFull {
     position: absolute;
     background-color: rgba(0,0,0, .3);
-    height: 100vh;
+    height: 100%;
     width: 100%;
     // opacity: 20%;
     bottom: 0;
@@ -58,8 +58,9 @@
     font-family: 'Inter';
     font-weight: 400;
     font-size: 1.1rem;
-    padding-bottom: 27px;
+    margin-bottom: 27px;
     text-shadow: 0.5px 0px 0px grey;
+    width: fit-content;
 }
 
 // CloseIcon has height of 28px, width of 28px if symmetrical
