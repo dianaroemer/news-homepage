@@ -1,10 +1,13 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import '../styles/NewsHomepage.scss';
+import DesktopMenu from './DesktopMenu';
 import MobileMenu from './MobileMenu';
 
 import {ReactComponent as Logo} from '../assets/images/logo.svg'
 import {ReactComponent as MenuIcon} from '../assets/images/icon-menu.svg'
 import mobileHeadlineImage from '../assets/images/image-web-3-mobile.jpg'
+import desktopHeadlineImage from '../assets/images/image-web-3-desktop.jpg'
+
 
 import newsThumbnailRetroPCs from '../assets/images/image-retro-pcs.jpg';
 import newsThumbnailLaptops from '../assets/images/image-top-laptops.jpg';
@@ -17,16 +20,33 @@ function NewsHomepage(props) {
     const [mobileMenu, toggleMobileMenu] = useState(true);
     const [mobileMenuTimeout, setMobileMenuTimeout] = useState(true);
 
+    const [viewportWidth, setViewportWidth] = useState(window.innerWidth)
+    window.onresize = handleWindowResize
+    function handleWindowResize() {
+      // console.log(window.innerHeight, window.innerWidth);
+      setViewportWidth(window.innerWidth);
+    }
+
+    const [isMobileViewport, toggleMobileViewport] = useState((window.innerWidth > 425));
+    useEffect(() => {
+      if(viewportWidth > 425) {
+        toggleMobileViewport(false)
+      } else {
+        toggleMobileViewport(true)
+      }
+    }, [viewportWidth])
+    
 
     function handleOpenMenu(e) {
         // e.preventDefault();
         // console.log(`You clicked the open menu button`);
         // console.log(e.target.className);
-        if(e.target.className
-            === 'mobileMenuSidePane'){
+        if(!isMobileViewport){
+            return;
                 // toggleMobileMenu(false);
                 // console.log('you clicked the side panel')
         }
+
         else if (e.target.className === 'mobileMenuFull' && mobileMenu) {
             // console.log('here?')
             toggleMobileMenu(false)
@@ -60,19 +80,28 @@ function NewsHomepage(props) {
 
                         <Logo viewBox='16 0 57 57' id='logoIcon' className='masthead'/>
 
-                        <MenuIcon viewBox='10 -1 20 20' 
-                            height={'20px'}
-                            width={'50px'}
-                             id='menuIcon'
-                             onClick={(e) => {
+                        {isMobileViewport ? 
+                            <MenuIcon viewBox='10 -1 20 20' 
+                                height={'20px'}
+                                width={'50px'}
+                                id='menuIcon'
+                                onClick={(e) => {
                                 handleOpenMenu(e);
-                             }}/>
+                                }}/> : 
+                            <DesktopMenu/>
+                        }
 
                     </div>
 
                     <div className='newsHomepageHeadline'>
 
-                        <img src={mobileHeadlineImage} alt='Colorful blocks in an elaborate, aesthetically pleasing pattern' className='mobileHeadlineImage'/>
+                        {isMobileViewport ?
+                            <img src={mobileHeadlineImage} alt='Colorful blocks in an elaborate, aesthetically pleasing pattern' className='mobileHeadlineImage'/> :
+                            <img src={desktopHeadlineImage} alt='Colorful blocks in an elaborate, aesthetically pleasing pattern' className='desktopHeadlineImage'/>
+                        }
+                        
+                        
+
 
                         <div className='newsHomepageHeadlineContent'>
                             <div className='newsHomepageHeadlineHeader'>
@@ -134,8 +163,8 @@ function NewsHomepage(props) {
 
                     <div className='newsHomepageStoriesContainer' id='popular-stories'>
                         <article className='newsHomepageStoryContainer'>
-                            <img src={newsThumbnailRetroPCs} alt='An old computer terminal lit in radical red and blue light' className='newsHomepageStoryThumbnail'/>
 
+                            <img src={newsThumbnailRetroPCs} alt='An old computer terminal lit in radical red and blue light' className='newsHomepageStoryThumbnail'/> 
 
                              <div className='newsHomepageStoryContent'>
                                 <h2 className='newsHomepageStoryNumber'>
@@ -197,6 +226,7 @@ function NewsHomepage(props) {
                     toggleMobileMenu={handleOpenMenu}
                     mobileMenu={mobileMenu}
                     mobileMenuTimeout={mobileMenuTimeout}
+                    isMobileViewport={isMobileViewport}
                 />
 
 
