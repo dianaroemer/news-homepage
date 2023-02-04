@@ -13,9 +13,7 @@ html{scroll-behavior:smooth}
     left: 0px;
     visibility: visible;
 
-    // transform: translateX(100%);
     transition: 0s left, 0s visbility, .5s opacity ease-in;
-
 }
 
 .mobileMenuSidePane {

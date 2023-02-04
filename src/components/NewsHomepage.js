@@ -25,7 +25,7 @@ function NewsHomepage(props) {
         if(e.target.className
             === 'mobileMenuSidePane'){
                 // toggleMobileMenu(false);
-                console.log('you clicked the side panel')
+                // console.log('you clicked the side panel')
         }
         else if (e.target.className === 'mobileMenuFull' && mobileMenu) {
             // console.log('here?')
