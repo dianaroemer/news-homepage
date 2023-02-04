@@ -51,17 +51,17 @@ function MobileMenu(props) {
                     onClick={(e) => {
                         props.toggleMobileMenu(e)}}/>
 
-                <div className='mobileMenuLink'>
+                <a href='#home' className='mobileMenuLink'>
                     Home
-                </div>
+                </a>
 
-                <div className='mobileMenuLink'>
+                <a href='#new-stories' className='mobileMenuLink'>
                     New
-                </div>
+                </a>
 
-                <div className='mobileMenuLink'>
+                <a href="#popular-stories" className='mobileMenuLink'>
                     Popular
-                </div>
+                </a>
 
                 <div className='mobileMenuLink'>
                     Trending

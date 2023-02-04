@@ -19,7 +19,7 @@ function NewsHomepage(props) {
 
 
     function handleOpenMenu(e) {
-        e.preventDefault();
+        // e.preventDefault();
         console.log(`You clicked the open menu button`);
         // console.log(e.target.className);
         console.log()
@@ -55,7 +55,7 @@ function NewsHomepage(props) {
         <div className='newsHomepage'>
             <div className='newsHomepageWrapper'>
 
-                <div className='newsHomepageContent'>
+                <div className='newsHomepageContent' id="home">
 
                     <div className='newsHomepageNav'>
 
@@ -91,7 +91,7 @@ function NewsHomepage(props) {
                         </div>
                     </div>
 
-                    <div className='newsHomepageNewStoriesContainer'>
+                    <div className='newsHomepageNewStoriesContainer' id='new-stories'>
 
                         <div className='newsHomepageNewStoriesHeader'>
                             New
@@ -133,7 +133,7 @@ function NewsHomepage(props) {
 
                     </div>
 
-                    <div className='newsHomepageStoriesContainer'>
+                    <div className='newsHomepageStoriesContainer' id='popular-stories'>
                         <article className='newsHomepageStoryContainer'>
                             <img src={newsThumbnailRetroPCs} alt='An old computer terminal lit in radical red and blue light' className='newsHomepageStoryThumbnail'/>
 
