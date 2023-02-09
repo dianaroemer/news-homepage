@@ -26,6 +26,12 @@
     color: _colors.$DarkGrayishBlue;
     margin-top: 7px;
 
+    transition: .5s color;
+
+}
+
+.desktopMenuLink:hover {
+    color: _colors.$SoftOrange;
 }
 
 // On Mobile CloseIcon has height of 28px, width of 28px if symmetrical

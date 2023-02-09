@@ -255,6 +255,13 @@
         margin-top: 38px;
         margin-bottom: 37px;
         width: 53%;
+        transition: .5s color, .5s background-color;
+    }
+
+    .newsHomepageHeadlineDetailsMore:hover {
+        color: white;
+        background-color: black;
+
     }
 
     .newsHomepageNewStoriesContainer {
@@ -267,6 +274,14 @@
     .newsHomepageNewStoriesHeader {
         font-size: 2.5rem;
         margin-top: 5px;
+    }
+
+    .newsHomepageNewStoryHeader {
+        transition: .5s color;
+    }
+
+    .newsHomepageNewStoryHeader:hover {
+        color: _colors.$SoftOrange;
     }
 
     #newsHomepageNewFinalStory {
@@ -286,5 +301,12 @@
         padding-top: 10px;
     }
 
+    .newsHomepageStoryTitle {
+        transition: .5s color;
+    }
+
+    .newsHomepageStoryTitle:hover {
+        color: _colors.$SoftRed;
+    }
 
 }
