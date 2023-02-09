@@ -29,8 +29,10 @@
     display: flex;
     justify-content: space-between;
     padding-top: 27px;
-    padding-left: 15px;
-    padding-right: 15px;
+    // padding-left: 15px;
+    // padding-right: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 #logoIcon {
@@ -38,6 +40,8 @@
     width: 70px;
     margin-right: 20px;
 }
+
+
 
 #menuIcon {
     transform: translateX(5px);
@@ -214,7 +218,9 @@
 
     .newsHomepageHorizontalContainer {
         display: flex;
-
+        padding-top: 35px;
+        margin-left: 5px;
+        margin-right: 5px;
     }
 
     .newsHomepageHeadline {
@@ -225,19 +231,59 @@
 
     .newsHomepageHeadlineContent {
         display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+        // width: auto;
+    }
+
+    .newsHomepageHeadlineHeader {
+        font-size: 3.5rem;
+        line-height: 100%;
+        width: 300px;
+    }
+
+    .newsHomepageHeadlineDetails {
+        width: 350px;
+    }
+
+    .newsHomepageHeadlineLead {
+        line-height: 1.6;
+        margin-top: 2px;
+    }
+
+    .newsHomepageHeadlineDetailsMore {
+        margin-top: 38px;
+        margin-bottom: 37px;
+        width: 53%;
     }
 
     .newsHomepageNewStoriesContainer {
         margin-top: 10px;
+        margin-left: 13px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .newsHomepageNewStoriesHeader {
+        font-size: 2.5rem;
+        margin-top: 5px;
+    }
+
+    #newsHomepageNewFinalStory {
+        margin-bottom: 10px;
     }
 
     .newsHomepageStoriesContainer {
         display: flex;
         justify-content: space-between;
+        margin-right: 20px;
+        margin-left: 20px;
+
     }
 
     .newsHomepageStoryContainer {
-        width: 31%;
+        width: 350px;
+        padding-top: 10px;
     }
 
 

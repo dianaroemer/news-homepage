@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-// import '../styles/MobileMenu.scss';
+import '../styles/DesktopMenu.scss';
 
 // import {ReactComponent as MenuClose} from '../assets/images/icon-menu-close.svg'
 

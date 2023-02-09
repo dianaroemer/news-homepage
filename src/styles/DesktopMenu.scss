@@ -1,0 +1,35 @@
+@use '_colors' as _colors;
+
+
+.desktopMenu {
+    width: 440px;
+    padding-right: 7px;
+}
+
+.desktopMenuPane {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    // padding-right: 5px;
+}
+
+
+
+.desktopMenuLink {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 27px;
+    text-shadow: 0.5px 0px 0px grey;
+    width: fit-content;
+    text-decoration: none;
+    color: _colors.$DarkGrayishBlue;
+    margin-top: 7px;
+
+}
+
+// On Mobile CloseIcon has height of 28px, width of 28px if symmetrical
+
+// top 0, 28 - 28px
+// left 118, 145 - 28px
+// right 352, 375 - 23px
