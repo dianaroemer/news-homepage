@@ -93,73 +93,78 @@ function NewsHomepage(props) {
 
                     </div>
 
-                    <div className='newsHomepageHeadline'>
+                    <div className='newsHomepageHorizontalContainer'>
 
-                        {isMobileViewport ?
-                            <img src={mobileHeadlineImage} alt='Colorful blocks in an elaborate, aesthetically pleasing pattern' className='mobileHeadlineImage'/> :
-                            <img src={desktopHeadlineImage} alt='Colorful blocks in an elaborate, aesthetically pleasing pattern' className='desktopHeadlineImage'/>
-                        }
-                        
-                        
+                        <div className='newsHomepageHeadline'>
+
+                            {isMobileViewport ?
+                                <img src={mobileHeadlineImage} alt='Colorful blocks in an elaborate, aesthetically pleasing pattern' className='mobileHeadlineImage'/> :
+                                <img src={desktopHeadlineImage} alt='Colorful blocks in an elaborate, aesthetically pleasing pattern' className='desktopHeadlineImage'/>
+                            }
 
 
-                        <div className='newsHomepageHeadlineContent'>
-                            <div className='newsHomepageHeadlineHeader'>
-                                The Bright Future of Web 3.0?
-                            </div>
 
-                            <div className='newsHomepageHeadlineDetails'>
-                                <div className='newsHomepageHeadlineLead'>
-                                    We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?
+
+                            <div className='newsHomepageHeadlineContent'>
+                                <div className='newsHomepageHeadlineHeader'>
+                                    The Bright Future of Web 3.0?
                                 </div>
-                                <button className='newsHomepageHeadlineDetailsMore'>
-                                    Read More
-                                </button>
+
+                                <div className='newsHomepageHeadlineDetails'>
+                                    <div className='newsHomepageHeadlineLead'>
+                                        We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?
+                                    </div>
+                                    <button className='newsHomepageHeadlineDetailsMore'>
+                                        Read More
+                                    </button>
+                                </div>
                             </div>
+                            </div>
+
+                            <div className='newsHomepageNewStoriesContainer' id='new-stories'>
+
+                            <div className='newsHomepageNewStoriesHeader'>
+                                New
+                            </div>
+
+                            <div className='newsHomepageNewStory'>
+                                <div className='newsHomepageNewStoryHeader'>
+                                    Hydrogen VS Electric Cars
+                                </div>
+                                <div className='newsHomepageNewStoryContent'>
+                                    Will hydrogen-fueled cars ever catch up to EVs?
+                                </div>
+
+                            </div>
+
+                            <hr className='newsHomepageNewStorySeparator'/>
+
+                            <div className='newsHomepageNewStory'>
+                                <div className='newsHomepageNewStoryHeader'>
+                                    The Downsides of AI Artistry
+                                </div>
+                                <div className='newsHomepageNewStoryContent'>
+                                    What are the possible adverse effects of on-demand AI image generation?
+                                </div>
+
+                            </div>
+
+                            <hr className='newsHomepageNewStorySeparator'/>
+
+                            <div className='newsHomepageNewStory'>
+                                <div className='newsHomepageNewStoryHeader'>
+                                    Is VC Funding Drying Up?
+                                </div>
+                                <div className='newsHomepageNewStoryContent' id='newsHomepageNewFinalStory'>
+                                    Private funding by VC firms is down 50% YOY. We take a look at what that means.
+                                </div>
+
+                            </div>
+
                         </div>
+
                     </div>
 
-                    <div className='newsHomepageNewStoriesContainer' id='new-stories'>
-
-                        <div className='newsHomepageNewStoriesHeader'>
-                            New
-                        </div>
-
-                        <div className='newsHomepageNewStory'>
-                            <div className='newsHomepageNewStoryHeader'>
-                                Hydrogen VS Electric Cars
-                            </div>
-                            <div className='newsHomepageNewStoryContent'>
-                                Will hydrogen-fueled cars ever catch up to EVs?
-                            </div>
-
-                        </div>
-
-                        <hr className='newsHomepageNewStorySeparator'/>
-
-                        <div className='newsHomepageNewStory'>
-                            <div className='newsHomepageNewStoryHeader'>
-                                The Downsides of AI Artistry
-                            </div>
-                            <div className='newsHomepageNewStoryContent'>
-                                What are the possible adverse effects of on-demand AI image generation?
-                            </div>
-
-                        </div>
-
-                        <hr className='newsHomepageNewStorySeparator'/>
-
-                        <div className='newsHomepageNewStory'>
-                            <div className='newsHomepageNewStoryHeader'>
-                                Is VC Funding Drying Up?
-                            </div>
-                            <div className='newsHomepageNewStoryContent' id='newsHomepageNewFinalStory'>
-                                Private funding by VC firms is down 50% YOY. We take a look at what that means.
-                            </div>
-
-                        </div>
-
-                    </div>
 
                     <div className='newsHomepageStoriesContainer' id='popular-stories'>
                         <article className='newsHomepageStoryContainer'>
