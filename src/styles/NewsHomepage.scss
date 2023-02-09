@@ -35,6 +35,8 @@
 
 #logoIcon {
     padding-left: 0;
+    width: 70px;
+    margin-right: 20px;
 }
 
 #menuIcon {
@@ -190,17 +192,24 @@
 }
 
 @media screen and (min-width: 426px ) {
-    
+
     .newsHomepageContent {
         display: flex;
         flex-direction: column;
         padding-left: 10%;
         padding-right: 10%;
+        height: 110%;
     }
 
     .newsHomepageNav {
         position: relative;
         padding-top: 90px;
+    }
+
+    #logoIcon {
+        // height: 65px;
+        // width: 65px;
+        padding-left: 2px;
     }
 
     .newsHomepageHorizontalContainer {
@@ -216,6 +225,10 @@
 
     .newsHomepageHeadlineContent {
         display: flex;
+    }
+
+    .newsHomepageNewStoriesContainer {
+        margin-top: 10px;
     }
 
     .newsHomepageStoriesContainer {

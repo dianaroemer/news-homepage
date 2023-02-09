@@ -78,7 +78,11 @@ function NewsHomepage(props) {
 
                     <div className='newsHomepageNav'>
 
-                        <Logo viewBox='16 0 57 57' id='logoIcon' className='masthead'/>
+                        {/* <Logo viewBox='16 0 57 57' id='logoIcon' className='masthead'/> */}
+                        {isMobileViewport ? 
+                            <Logo viewBox='16 0 57 57' id='logoIcon' className='masthead'/> :
+                            <Logo viewBox='10 0 40 40' id='logoIcon' className='masthead'/>
+                            }
 
                         {isMobileViewport ? 
                             <MenuIcon viewBox='10 -1 20 20' 
