@@ -1,4 +1,4 @@
-# Frontend Mentor - News homepage solution
+# [Frontend Mentor - News homepage solution](https://dianaroemer.github.io/news-homepage/)
 
 This is a solution to the [News homepage challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
@@ -14,9 +14,7 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -38,23 +36,20 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL](https://github.com/dianaroemer/news-homepage)
+- Live Site URL: [Live Site URL](https://dianaroemer.github.io/news-homepage/)
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- [Sass](https://sass-lang.com//) - CSS Extension Language
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
@@ -104,51 +99,28 @@ https://blog.openreplay.com/mastering-css-transitions-with-react-18/
 
 
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+In the future, I would like to continue to explore animating modals in React. While this solution worked 'somewhat' for this project, I still feel as though there ought to be a better way to make modals animate appropriately without such an obtuse styling method. 
+Additional development goals: 
+ - More appropriate Semantic HTML structure
+ - Adding Typescript to my React applications for safer typing
+ - Learning a testing framework (Jest?)
+ - Continue exploring Sass - nested styling looks very powerful
+ - Improved modals in future React applications
+ - Better Footer placement - see my notes in Useful Resources, effectively copied from my Interactive Rating Component
+ - Practice more complex uses of Grid 
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [devDocs.io](https://devdocs.io/) - Developer documentation for nearly everything I'm using, listed in one place and stored locally, so I don't have to google around to find the specific documentation relevant to whatever function I want to use (ex: does line-height use pixels or scale?)
+- [Pixlr](https://pixlr.com/) - Photoshop in a browser. Useful for checking specific sizes of elements, getting exact color palettes, etc.
+- [How to keep your Footer where it belongs?](https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/) - A short FreeCodeCamp article about how to place a footer so that it goes where it's supposed to without ruining the rest of the document. While helpful, I still haven't quite resolved the `#content-wrap {padding-bottom: 1rem;} #footer Height` issue, in which including this line creates an additional bit of padding on the bottom the page which creates a vertical scroll bar in some environments, despite space being available for the footer. Still, quite helpful for understanding how to get better Footer placement.
+ - [Mastering CSS Transitions with React 18- Modal Animations](https://blog.openreplay.com/mastering-css-transitions-with-react-18/)
+  - Very useful website that gave me the framework for writing and implementing an animated modal in React for this project. Modifications were made to animate the modal responsively and prevent the modal from activing in desktop view, in addition to animating the modal from a horizontal position, rather than a vertical one. 
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Website - [Diana Roemer](https://github.com/dianaroemer)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/dominicroemer)
