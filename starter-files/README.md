@@ -1,94 +1,157 @@
-# Frontend Mentor - News homepage
+# Frontend Mentor - News homepage solution
 
-![Design preview for the News homepage coding challenge](./design/desktop-preview.jpg)
+This is a solution to the [News homepage challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Welcome! 👋
+## Table of contents
 
-Thanks for checking out this front-end coding challenge.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+**Note: Delete this note and update the table of contents based on what sections you keep.**
 
-**To do this challenge, you need a good understanding of HTML and CSS, and basic JavaScript.**
+## Overview
 
-## The challenge
+### The challenge
 
-Your challenge is to build out this news website homepage and get it looking as close to the design as possible.
-
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-Your users should be able to:
+Users should be able to:
 
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+### Screenshot
 
-## Where to find everything
+![](.screenshots/screen-desktop.jpg)
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
 
-All the required assets for this project are in the `/assets` folder. The images are already exported for the correct screen size and optimized.
+**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
 
-We also include variable and static font files for the required fonts for this project. You can choose to either link to Google Fonts or use the local font files to host the fonts yourself. Note that we've removed the static font files for the font weights that aren't needed for this project.
+### Links
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
-## Building your project
+## My process
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+### Built with
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- [Next.js](https://nextjs.org/) - React framework
+- [Styled Components](https://styled-components.com/) - For styles
 
-## Deploying your project
+**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+### What I learned
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+I struggled somewhat with properly implementing appropriate z-index values for multiple components. In the future, I would like to practice using z-index to see which components will draw first, then see which components can be affected by changing their z-index values, based on the order in which they are drawn by the webpage. Similarly, I learned about how z-index is overridden by adjusting a component's opactiy or by applying a transform. While I don't have a complete understanding of why that's the case, it seems to have to do with how elements with adjusted transform and opacity values are drawn differently from other, unadjusted elements. 
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+In addition, I learned about drawing and resizing SVG elements, or more specifically using viewBox on an SVG element to designate the area of the SVG that get's drawn, then adjusting the element's height and width in the styling 'after' the viewbox declares the size of the element to draw. Long story short, when drawing SVG's, declare their viewBox appropriately before adjusting any other styling of the SVG to ensure the browser draws the SVG appropriately, instead of clipping corners. 
+    In the future, when using viewBox to scale and place SVG's, add a 
+    ```css
+    #menuIconSVG {
+      border: 1px solid black;
+    }
+    ```
+    to see its placement and the sizing/scaling of the SVG within the viewBox, instead of just guessing white on white or black on black. The border shows the size of your box, and you can manually adjust height, width, min-x, and min-y to place the SVG correctly, finalizing with tweaks to padding and margin once the size is set.
 
-## Create a custom `README.md`
+Ok, I'm really proud of this one. I was able to get CSS transitions to work on a rendered React component without completely redrawing the component, allowing for variable state to affect the components current transition lifetime. By drawing the component as normal, then applying variable styling using the state or props of the parent component, you can tie functionality to the true or false values of the state or props. Then, by passing that variable into the style of the rendered component and defining some transition definitions in the CSS, the transitions apply "mostly" seamlessly. Check this out - 
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+```js
+let [view, setView] = useState(true)
+return (
+  <div className="modal" style={{left: view && "500px"}}>
+    modal content
+  </div>
+)
+```
+and
+```css
+.modal {
+  left: 0px;
+  transition: 1s left;
+}
+```
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+As seen above, the state of the `view` variable determines whether or not the .modal component renders its style with 500px or with the CSS declared 0px. Applying a transition over changes to the left property keeps the modal rendered in the DOM and allows it to be moved freely on and off of the webpage with animations going both ways. This also applies, and works well, with the visibility property - e.g.
+```js
+<div className="modal" style={{left: view && "500px", visbility: none}}>
+```
+```css
+.modal {
+  left: 0px;
+  visibility: visible;
+  transition: 0s visibility, .5s left;
+}
+```
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+One of the problems I discovered in using this, is that when the component animates in or out, it has a tendency to stay where it was last put. While it may sound counterintuitive, I found success using setTimeout and two state management variables to move my components behind the scenes - take a look at the function handleOpenMenu in NewsHomepage.js and how it passes those state values down to MobileMenu.js at '.mobileMenuFull' and '.mobileMenuSidePane'. That problem might be resolved in the future by reversing the order in which I animate these components - instead of applying the true state to the hidden state, apply the true state to the visible state, and allow the the false state to correspond to the hidden state. For better examples, see the reference code I found here
+https://blog.openreplay.com/mastering-css-transitions-with-react-18/
 
-## Submitting your solution
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
-## Sharing your solution
+To see how you can add code snippets, see below:
 
-There are multiple places you can share your solution:
+```html
+<h1>Some HTML code I'm proud of</h1>
+```
+```css
+.proud-of-this-css {
+  color: papayawhip;
+}
+```
+```js
+const proudOfThisFunc = () => {
+  console.log('🎉')
+}
+```
 
-1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
+**Note: Delete this note and the content within this section and replace with your own learnings.**
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
+### Continued development
 
-## Got feedback for us?
+Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
+**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
+### Useful resources
 
-**Have fun building!** 🚀
+- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+
+**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+
+## Author
+
+- Website - [Add your name here](https://www.your-site.com)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+
+**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+
+## Acknowledgments
+
+This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+
+**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
