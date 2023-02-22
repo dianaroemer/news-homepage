@@ -123,4 +123,4 @@ Additional development goals:
 ## Author
 
 - Website - [Diana Roemer](https://github.com/dianaroemer)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/dominicroemer)
+- Frontend Mentor - [Diana Roemer](https://www.frontendmentor.io/profile/dominicroemer)
